@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    background-color: #ebebeb;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.section_left{
+    width: 20%;
+    height: 100vh;
+    background-color: #fffFFF;
+    border-right: 1px solid #727272;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_left nav{
+    margin-top: 50px;
+}
+.section_left a{
+    color: #000000;
+}
+.section_left li{
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.section_left li:hover{
+    background-color: #c6c6c6;
+}
+.section_left >div{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: calc(100vh - 100px);
+}
+
+.productos{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.productos img{
+    width: 24px;
+    height: 24px;
+
+}
+.menu_productos{
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    display: block;
+    width: 90%;
+    
+}
+.section_principal{
+    width: 80%;
+    margin-left: 20%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.section_principal--inicio{
+    width: 80%;
+    margin-left: 20%;
+    height: auto;
+    padding: 20px;
+}
+.section_principal--inicio>div{
+    width: 620px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.caja{
+    width: 300px;
+    height: 150px;
+    background-color: #1c8bac;
+    color: #fffFFF;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 2px 1px rgba(0, 0, 0, 0.6);
+    text-align: center;
+  
+}
+.caja p:nth-child(2){
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.botones{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.botones a{
+    width: 50%;
+    color: #fffFFF;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 30px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+.cards{
+    width: 70%;
+    margin-top: 10px;
+
+    height: 160px;
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    background-color: #ffffff;
+}
+
+.cards img{
+    width: 160px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.b-crud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    padding-right: 50px;
+}
+.b-crud a{
+    text-decoration: underline;
+    color: #000000;
+}
+.tabla-cel input{
+    font-family: 'Mulish', sans-serif;
+    outline: none;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid gray;   
+    
+}
+
+.b_actualizar{
+    margin-top: 50px;
+    width: 50%;
+    color: #fffFFF;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.msn_exito{
+    margin-top: 20px;
+    font-size: 2rem;
+}

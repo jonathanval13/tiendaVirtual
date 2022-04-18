@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    background-color: #ebebeb;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+header{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 20px;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.header-logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center{
+    width: 70%;
+    text-align: center;
+}
+
+#input-buscar{
+    width: 80%;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.nav__menu{
+    margin-left: 30px;
+}
+
+.nav__menu li{
+    display: inline-block;
+    padding-right: 50px;
+  
+}
+
+.nav__menu li a{
+    color: #000000;
+}
+.menu-productos{
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #ffffff;
+    z-index: 1;
+  
+    gap: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.productos:hover .menu-productos,.menu-productos:hover{
+   display: flex;
+   flex-direction: column;
+}
+.menu-productos li:hover{
+    background-color: #ebebeb;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.left div a{
+    color: #000000;
+}
+
+.left div{
+    display: flex;
+    flex-direction: column;
+}
+.left div button a{
+    color: #ffffff;
+}
+.left div button{
+    background-color: #000000;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 15px;
+}
+.left div:hover .logout{
+    display: block;
+ }
+ .name_user{
+
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+ .logout{
+     padding-top: 30px;
+     display: none;
+     position: absolute;
+ 
+ }
+ .name_user img{
+    width: 24px;
+    height: 24px;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: stretch;
+}
+
+
+
+.section__opciones{
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    
+}
+.lateral > li{
+    border-bottom: 1px solid gray;
+    
+
+}
+.lateral li{
+    margin-bottom: 25px;
+}
+
+.section__productos{
+    width:100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contenedor-producto{
+    width: 25%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+
+
+}
+.contenedor-producto img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: 450ms all;
+}
+
+.contenedor-producto img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+
+.detalles-producto{
+    width: 100%;
+    height: 140px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detalles-producto button{
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    
+}
+.detalles-producto button a{
+    color: #ffffff;
+}
+footer{
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    gap:2em;
+    margin-top: 50px;
+}
+footer a{
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 30px;
+}
+footer a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    background-color: #ebebeb;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+header{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 20px;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.header-logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center{
+    width: 70%;
+    text-align: center;
+}
+
+#input-buscar{
+    width: 80%;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.nav__menu{
+    margin-left: 30px;
+}
+
+.nav__menu li{
+    display: inline-block;
+    padding-right: 50px;
+  
+}
+
+.nav__menu li a{
+    color: #000000;
+}
+.menu-productos{
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #ffffff;
+    z-index: 1;
+  
+    gap: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.productos:hover .menu-productos,.menu-productos:hover{
+   display: flex;
+   flex-direction: column;
+}
+.menu-productos li:hover{
+    background-color: #ebebeb;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.left div a{
+    color: #000000;
+}
+
+.left div{
+    display: flex;
+    flex-direction: column;
+}
+.left div button a{
+    color: #ffffff;
+}
+.left div button{
+    background-color: #000000;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 15px;
+}
+.left div:hover .logout{
+   display: block;
+}
+.name_user{
+
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.logout{
+    padding-top: 30px;
+    display: none;
+    position: absolute;
+
+}
+.name_user img{
+    width: 24px;
+    height: 24px;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards_productos{
+    width:75%;
+    height: 500px;
+
+
+}
+.cards{
+    width: 80%;
+    margin: 25px auto;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+   
+   
+}
+.cards_center{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+.cards_center p:nth-child(1){
+    font-size: 2.5rem;
+}
+.cards_center p:nth-child(2){
+    font-size: 3rem;
+}
+
+.cards_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.cards_left input{
+    width: 50px;
+}
+.cards_left a{
+    color: #000000;
+}
+.cards_left a:hover{
+    text-decoration: underline;
+}
+.section_comprar{
+    width: 25%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+}
+.mensaje_car_vacio{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 50px;
+
+}
+
+.section_comprar table {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.section_comprar table td{
+    padding: 10px 0;
+}
+.section_comprar table tr td:nth-child(2){
+    text-align: right;
+}
+
+.total_p{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#total{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section_comprar a{
+    width: 80%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin:0 auto;
+}
+.msn_exito{
+    margin: 20px;
+    text-align: center;
+}
